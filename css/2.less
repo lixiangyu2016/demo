@@ -1,0 +1,176 @@
+*{margin: 0;padding: 0;};
+ul,li{list-style: none}
+p,i,b{
+  margin: 0;
+  padding: 0;
+}
+.page1,.page2.page3.page4.page5.page6{
+  position: relative;
+  overflow: hidden;
+  .content,.lefTop,.lefBot,.rigBot,.rigTop{
+    position: absolute;
+  }
+}
+
+html{
+  width:100%;
+  background-color: #eeeeee;
+  #page2{
+    .lefTop{
+      img {
+        opacity: 1;
+        -webkit-animation: bounceInLeft 1s 0.5s both;
+        animation: bounceInLeft 1s 0.5s both;
+      }
+    }
+    .lefBot{
+      img {
+        -webkit-animation: bounceInUp 2s 1s both;
+        animation: bounceInUp 2s 1s both;
+      }
+    }
+    .rigTop{
+      img{
+        -webkit-animation: slideInRight 1s 2s both;
+        animation: slideInRight 1s 2s both;
+      }
+    }
+    .rigBot{
+      img{
+        -webkit-animation: slideInRight 1s 2.5s both;
+        animation: slideInRight 1s 2.5s both;
+      }
+    }
+    .content{
+      img:nth-child(1){
+        -webkit-animation: bounceIn 1s 3s both;
+        animation: bounceIn 1s 3s both;
+      }
+      div:nth-child(2){
+        -webkit-animation: bounceIn 1s 3.5s both;
+        animation: bounceIn 1s 3.5s both;
+      }
+    }
+    .name{
+      li:nth-child(1){
+        -webkit-animation: fadeInLeft 2s 4s both;
+        animation: fadeInLeft 2s 4s both;
+        div{
+          -webkit-animation: bounceIn 1s 5.5s both;
+          animation: bounceIn 1s 5.5s both;
+        }
+      }
+      li:nth-child(2){
+        -webkit-animation: bounceIn 1s 6s both;
+        animation: bounceIn 1s 6s both;
+      }
+      li:nth-child(3){
+        -webkit-animation: bounceIn 1s 6.5s both;
+        animation: bounceIn 1s 6.5s both;
+      }
+    }
+  }
+  .Resume{
+    position:  relative ;
+    top:0;
+    width: 100%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    background: black;
+    font-size: 0.48rem;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+  }
+  .page2 {
+    width: 100%;
+    height: 100%;
+    /*左上角*/
+    .lefTop {
+      left: -0.04rem;
+      top: -1.24rem;
+      .tRectangle {
+        opacity:0;
+        width: 1.43rem;
+        height:7.44rem;
+      }
+    }
+    /*左下角*/
+    .lefBot {
+      position: absolute;
+      left: -0.02rem;
+      bottom: -0.01rem;
+      img {
+        width: 2.56rem;
+        height:4.06rem;
+      }
+    }
+    /*右上角*/
+    .rigTop{
+      right: 0;
+      top: -3%;
+      transform: rotate(-58deg);
+      img{
+        width: 2.3rem;
+      }
+    }
+    /*右下角*/
+    .rigBot{
+      right: 5%;
+      bottom: 2%;
+      transform: rotate(172deg);
+      img{
+        width: 2.35rem;
+      }
+    }
+    /* 中间部分*/
+    .content{
+      right:61%;
+      top:15%;
+      z-index: 5;
+      img:nth-child(1){
+        width:2rem;
+      }
+      div:nth-child(2){
+        position: absolute;
+        right:0;
+        top:50%;
+        margin-top: -44%;
+        img{
+          width:1.8rem;
+        }
+      }
+    }
+    .name{
+      position: absolute;
+      left: 28%;
+      top: 20%;
+      li:nth-child(1){
+        text-align: center;
+        height: 1rem;
+        line-height: 1rem;
+        font-size: 0.4rem;
+        color: yellow;
+        background-color: black;
+      }
+      li:nth-child(2),li:nth-child(3){
+        position: absolute;
+        left: -15%;
+        top:136%;
+        text-align: left;
+        height: 0.6rem;
+        line-height: 0.6rem;
+        font-size: 0.35rem;
+      }
+      li:nth-child(3){
+        left: 7%;
+        top:439%;
+      }
+    }
+  }
+
+}
+
+
+
+
